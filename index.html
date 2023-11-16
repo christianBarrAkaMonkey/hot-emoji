@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="packman">
+  <div class='eyebrow'></div>
+  <div class="eyes"></div>
+  <div class="eyes"></div>
+  <div class="mouth">
+    <div class="tounge">
+      <div class='tounge-line'></div>
+    </div>
+  </div>
+  <div class="tear"></div>
+</div>
+    <script>let packman = document.querySelectorAll('#packman');
+packman.forEach(item => {
+  item.style.width = "700px";
+  item.style.height = "700px";
+  item.style.background = 'linear-gradient(red, yellow)';
+  item.style.borderRadius = '50%';
+  item.style.border = '7px solid black';
+  item.style.textAlign = 'center';
+  item.style.position = "absolute";
+  
+})
+
+let eyes = document.querySelectorAll('.eyes');
+eyes.forEach(item => {
+  item.style.backgroundColor = "black";
+  item.style.height = "100px";
+  item.style.width = "100px";
+  item.style.display = "inline-block";
+  item.style.borderRadius = "50%";
+  item.style.margin = "55px";
+  item.style.position = "relative";
+  item.style.top = "80px";
+  item.style.left = '10px';
+})
+
+let mouth = document.querySelectorAll('.mouth');
+mouth.forEach(item => {
+  item.style.width = '400px';
+  item.style.height = '230px';
+  item.style.backgroundColor = "black";
+  item.style.position = 'relative';
+  item.style.top = '100px';
+  item.style.left = '160px';
+  item.style.borderRadius = '50%';
+})
+
+let tounge = document.querySelectorAll('.tounge');
+tounge.forEach(item => {
+  item.style.width = '320px';
+  item.style.height = '280px';
+  item.style.background = 'linear-gradient(#FF69B4, pink)';
+  item.style.borderRadius = '45%';
+  item.style.position = 'relative';
+  item.style.top = '75px';
+  item.style.left = '35px';
+  item.style.border = '5px solid black'
+})
+
+let tears = document.querySelectorAll('.tear');
+tears.forEach(item => {
+  item.style.borderRadius = '80% 0 55% 50% / 55% 0 80% 50%';
+  item.style.transform = 'rotate(-45deg)';
+  item.style.border = '3px solid black';
+  item.style.position = 'relative';
+  item.style.width = '100px';
+  item.style.height = '100px';
+  item.style.marginTop = '20px';
+  item.style.backgroundColor = 'cyan';
+  item.style.bottom = '250px';
+  item.style.left = '30px';
+  
+})
+
+let line = document.querySelectorAll('.tounge-line');
+line.forEach(item => {
+  item.style.width = '270px';
+  item.style.height = '100px';
+  item.style.border = 'solid 5px #000';
+  item.style.borderColor = 'transparent transparent #000 transparent';
+  item.style.borderRadius = '0 0 150px 50%/30px';
+  item.style.rotate = '270deg';
+  item.style.position = 'relative';
+  item.style.top = '75px';
+  item.style.right = '7px';
+})
+
+let eyebrows = document.querySelectorAll('.eyebrow');
+eyebrows.forEach(item => {
+   item.style.width = '270px';
+  item.style.height = '100px';
+  item.style.border = 'solid 5px #000';
+  item.style.borderColor = 'transparent transparent #000 transparent';
+  item.style.borderRadius = '0 0 150px 50%/30px';
+  item.style.rotate = '270deg';
+  item.style.position = 'relative';
+  item.style.rotate = '-25deg';
+  item.style.position = 'relative';
+  item.style.top = '80px';
+  item.style.left = '50px';
+})
+</script>
+</body>
+</html>
